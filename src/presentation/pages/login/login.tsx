@@ -1,6 +1,6 @@
 import React from 'react'
 import Styles from './login-syles.scss'
-import { Footer, Input, LoginHeader, FormStatus } from '../components'
+import { Footer, Input, LoginHeader, FormStatus } from '../../components'
 
 const Login: React.FC = () => {
   return (

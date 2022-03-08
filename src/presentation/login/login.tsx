@@ -1,9 +1,9 @@
 import React from 'react'
 import Styles from './login-syles.scss'
-import Spinner from '../components/spinner/spinner'
 import Header from '../components/login-header/login-header'
 import Footer from '../components/footer/footer'
 import Input from '../input/input'
+import FormStatus from '../components/form-status/form-status'
 
 const Login: React.FC = () => {
   return (
@@ -17,10 +17,7 @@ const Login: React.FC = () => {
           Entrar
         </button>
         <span className={Styles.link}>Criar Conta</span>
-        <div className={Styles.errorWrap}>
-          <Spinner className={Styles.spinner} />
-          <span className={Styles.error}>Erro</span>
-        </div>
+        <FormStatus />
       </form>
       <Footer />
     </div>

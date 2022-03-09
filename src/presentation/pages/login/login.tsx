@@ -3,21 +3,21 @@ import Styles from './login-syles.scss'
 import { Footer, Input, LoginHeader, FormStatus } from '../../components'
 import Context from '@/presentation/contexts/form/form-context'
 
-type StateProps = {
-  isLoading: boolean
-  errorMessage: string
-}
-
 const Login: React.FC = () => {
-  const [state] = useState<StateProps>({
-    isLoading: false,
-    errorMessage: ''
+  const [state] = useState({
+    isLoading: false
+  })
+
+  const [errorState] = useState({
+    email: 'Campo Obrigatório',
+    password: 'Campo Obrigatório',
+    main: ''
   })
 
   return (
     <div className={Styles.login}>
       <LoginHeader />
-      <Context.Provider value={state}>
+      <Context.Provider value={{ state, errorState }}>
         <form className={Styles.form}>
           <h2>Login</h2>
           <Input type='email' name='email' placeholder='Digite seu e-mail' />
@@ -26,7 +26,12 @@ const Login: React.FC = () => {
             name='password'
             placeholder='Digite seu senha'
           />
-          <button data-testid="submit" disabled className={Styles.submit} type='submit'>
+          <button
+            data-testid='submit'
+            disabled
+            className={Styles.submit}
+            type='submit'
+          >
             Entrar
           </button>
           <span className={Styles.link}>Criar Conta</span>

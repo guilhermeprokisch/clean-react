@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { Login } from '../../pages/'
+import Login from '../../pages/login/login'
 
 const Router: React.FC = () => {
   return (

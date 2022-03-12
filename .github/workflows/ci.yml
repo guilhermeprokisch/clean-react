@@ -21,6 +21,7 @@ jobs:
         node-version: '12'
     - run: npm install
     - run: ./node_modules/.bin/eslint 'src/**'
+    - run: npm run test:coveralls
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:

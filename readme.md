@@ -1,4 +1,5 @@
-[![codecov](https://codecov.io/gh/guilhermeprokisch/clean-react/branch/master/graph/badge.svg?token=36XHW00N0V)](https://codecov.io/gh/guilhermeprokisch/clean-react)
+[![Build](https://github.com/guilhermeprokisch/clean-react/actions/workflows/ci.yml/badge.svg)](https://github.com/guilhermeprokisch/clean-react/actions/workflows/ci.yml)
+[![Codecov](https://codecov.io/gh/guilhermeprokisch/clean-react/branch/master/graph/badge.svg?token=36XHW00N0V)](https://codecov.io/gh/guilhermeprokisch/clean-react)
 
 # **4Dev React - Enquetes para Programadores**
 

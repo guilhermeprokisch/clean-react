@@ -22,6 +22,6 @@ jobs:
     - run: npm install
     - run: ./node_modules/.bin/eslint 'src/**'
     - run: npm run test:ci
-    - run: curl -Os https://uploader.codecov.io/latest/macos/codecov
+    - run: curl -Os https://uploader.codecov.io/latest/linux/codecov
     - run: chmod +x codecov
     - run: ./codecov
